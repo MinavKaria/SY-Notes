@@ -1,0 +1,69 @@
+Abstract Data Type: Stack (Linked List-Based)
+
+Data:
+- head: A reference to the top node of the linked list.
+- size: The current number of elements in the stack.
+
+Operations:
+1. create(): Creates a new empty stack.
+2. push(element): Adds the given element to the top of the stack.
+3. pop(): Removes and returns the element at the top of the stack.
+4. top(): Returns the element at the top of the stack without removing it.
+5. size(): Returns the number of elements in the stack.
+6. is_empty(): Checks if the stack is empty.
+7. clear(): Removes all elements from the stack, making it empty.
+
+Preconditions:
+- `create()`: No preconditions.
+- `push(element)`: No preconditions.
+- `pop()`: The stack must not be empty (`is_empty()` returns false).
+- `top()`: The stack must not be empty (`is_empty()` returns false).
+
+Postconditions:
+- `create()`: Creates an empty stack with a null head reference and a size of 0.
+- `push(element)`: The element is successfully added to the top of the stack, and the size is increased by one.
+- `pop()`: The element at the top of the stack is removed and returned, and the size is decreased by one.
+- `top()`: Returns the element at the top of the stack without modifying the stack.
+- `size()`: Returns the number of elements in the stack.
+- `is_empty()`: Returns true if the stack is empty (size is 0), false otherwise.
+- `clear()`: Removes all elements from the stack, making it empty (size becomes 0).
+
+This ADT and its associated preconditions and postconditions provide guidelines for using a linked list-based stack implementation correctly and efficiently. They help ensure that operations are executed safely and produce the expected results.
+
+
+Abstract Data Type: Queue (Array-Based)
+
+Data:
+- elements: An array to store elements of the queue.
+- front: An index pointing to the front element of the queue.
+- rear: An index pointing to the rear element of the queue.
+- size: The current number of elements in the queue.
+- capacity: The maximum capacity of the queue (size of the array).
+
+Operations:
+1. create(capacity): Creates a new empty queue with the given capacity.
+2. enqueue(element): Adds the given element to the rear of the queue.
+3. dequeue(): Removes and returns the element at the front of the queue.
+4. front(): Returns the element at the front of the queue without removing it.
+5. size(): Returns the number of elements in the queue.
+6. is_empty(): Checks if the queue is empty.
+7. is_full(): Checks if the queue is full.
+8. clear(): Removes all elements from the queue, making it empty.
+
+Preconditions:
+- `create(capacity)`: The `capacity` should be a positive integer indicating the maximum size of the queue.
+- `enqueue(element)`: The queue must not be full (`is_full()` returns false).
+- `dequeue()`: The queue must not be empty (`is_empty()` returns false).
+- `front()`: The queue must not be empty (`is_empty()` returns false).
+
+Postconditions:
+- `create(capacity)`: Creates an empty queue with the specified capacity, front, rear, and size set to appropriate initial values.
+- `enqueue(element)`: The element is successfully added to the rear of the queue, and the size is increased by one.
+- `dequeue()`: The element at the front of the queue is removed and returned, and the size is decreased by one.
+- `front()`: Returns the element at the front of the queue without modifying the queue.
+- `size()`: Returns the number of elements in the queue.
+- `is_empty()`: Returns true if the queue is empty (size is 0), false otherwise.
+- `is_full()`: Returns true if the queue is full (size is equal to capacity), false otherwise.
+- `clear()`: Removes all elements from the queue, making it empty (size becomes 0).
+
+This ADT and its associated preconditions and postconditions provide guidelines for using an array-based queue implementation correctly and efficiently. They help ensure that operations are executed safely and produce the expected results.
