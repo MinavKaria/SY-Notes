@@ -68,7 +68,7 @@ int main()
     printf("2. Remove a Task\n");
     printf("3. Mark Task as Completed\n");
     printf("4. Display all the Task with Priority\n");
-    printf("5. Give Highest Priority task to be done\n");
+    printf("5. Show Highest Priority task to be done\n");
     printf("6. Display All Completed Task\n");
     printf("7. Exit\n");
     printf("Pick a choice\n");
@@ -82,22 +82,22 @@ switch(choice)
     {
         char task[100];
         int prior;
-        printf("Enter the Task (Use _ (underscore) instead of space) :\n");
+        printf("Enter the Task:\n");
         scanf("%s",task);
 
         while (1) 
         {
-        printf("Enter the priority for %s (0-10): ", task);
-        scanf("%d", &prior);
-        if (prior >= 0 && prior <= 10) 
-        {
-            break;
-        } 
-        else 
-        {
-            printf("Invalid priority value. Please enter a value between 0 and 10.\n");
+            printf("Enter the priority for %s (1-10): ", task);
+            scanf("%d", &prior);
+            if (prior >= 1 && prior <= 10) 
+            {
+                break;
+            } 
+            else 
+            {
+                printf("Invalid priority value. Please enter a value between 0 and 10.\n");
+            }
         }
-    }
         
         
        
@@ -280,7 +280,7 @@ switch(choice)
     }
     case 7:
     {
-        printf("I hope you complete all your Tasks,Have A Nice Day Goodbye\n");
+        printf("I hope you complete all your Tasks,Have A Nice Day\n");
         exit(0);
     }
 
