@@ -1,12 +1,11 @@
-import Engineering.Marks;
-import Engineering.Student;
+import NewPack.Pack;
 
 public class Main 
 {
-    public static void main(String args[]) {
-        Student s = new Student();
-        s.getDetails();
-        Marks.sort(s);
-        Marks.display(s);
+    public static void main(String[] args)
+    {
+        Pack ob=new Pack(); 
+        ob.display();
+
     }
 }
