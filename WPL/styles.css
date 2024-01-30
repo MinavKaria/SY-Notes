@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+header:hover {
+    transform: rotateX(10deg);
+}
+
+h1 {
+    margin: 0;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    transform: rotateY(10deg);
+}
